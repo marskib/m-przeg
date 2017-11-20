@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calosc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnNazad"
+        android:drawableRight="@drawable/arrow_left"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/btn_text_rozmiar"
+        android:layout_weight="1"
+
+        android:background="@drawable/moj_klawisz"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="1dp"
+    />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margines_obrazka_od_gory"
+            android:layout_marginBottom="@dimen/margines_obrazka_od_gory"
+            android:onClick="coNaKlikOnimageView"
+            />
+
+
+        <!--
+        <TextView
+            android:id="@+id/nazwaTV"
+            android:textSize="@dimen/podpis_pod_obrazkiem_rozmiar"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true" />
+        -->
+
+        <!-- Uwaga - rezegnuje z normalnego TextView na rzecz "wlasnej" klasy (ponizej), bo zwykly TextView zawijal dlugie wyrazy. 2017-03-22 -->
+
+        <com.example.developer.mprzegladarka.ResizeTextView
+            android:id="@+id/nazwaTV"
+
+            android:gravity="center_vertical|center_horizontal"
+
+            android:textSize="@dimen/podpis_pod_obrazkiem_rozmiar"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView"
+            android:padding="0dp"
+            android:layout_marginTop="-20dp"
+
+            android:maxLines="1"
+
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+        />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnForward"
+
+        android:drawableLeft="@drawable/arrow_right"
+
+        android:layout_height="match_parent"
+        android:layout_width ="match_parent"
+        android:textSize="@dimen/btn_text_rozmiar"
+        android:layout_weight="1"
+
+        android:background="@drawable/moj_klawisz"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="1dp"
+
+        />
+
+</LinearLayout>

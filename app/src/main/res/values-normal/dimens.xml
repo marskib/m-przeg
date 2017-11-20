@@ -1,0 +1,39 @@
+<resources>
+
+    <dimen name="aplikacja_info_size">20sp</dimen>
+
+    <!--uwaga: _np ponizej oznacza normal portrait - trzeba bylo kombinowac, bo sie nie miescil, aklasa ResizeTextViev nie dzilala na duzych sizach...-->
+
+    <dimen name="aplikacja_info_size_np">17sp</dimen>
+
+
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">3dp</dimen>
+    <dimen name="activity_vertical_margin">3dp</dimen>
+    <dimen name="btn_text_rozmiar">10sp</dimen>
+    <dimen name="nazwa_text_rozmiar">20sp</dimen>
+
+    <dimen name="btn_zrodlo_text_rozmiar">15sp</dimen>
+
+    <dimen name="rb_dolny_text_rozmiar">15sp</dimen>
+
+    <dimen name="nazwa_text_rozmiar_uwaga_na_huawei">18sp</dimen>
+    <dimen name="nazwa_text_rozmiar_uwaga_na_huawei_land">18sp</dimen>
+
+
+    <dimen name="margines_obrazka_od_gory">10dp</dimen>
+
+    <dimen name="podpis_pod_obrazkiem_rozmiar">45sp</dimen>
+
+    <dimen name="bOK_size">25sp</dimen>
+
+    <dimen name="ostrzegaj_demo_size">20sp</dimen>
+
+    <dimen name="tvGledzenie_size">10sp</dimen>
+    <dimen name="tvInstrukcja_size">20sp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">MPrzegladarka</string>
+
+    <string name="aplikacja_info">MPrzegladarka - mowa bierna / czytanie globalne</string>
+
+    <!--uwaga _np ponizej oznacza normal portrait - trzeba bylo kominowac, bo sie nie miescil, aklasa ResizeTextViev nie dzilala w _np ...-->
+    <string name="aplikacja_info_np">Mowa bierna / Czytanie globalne</string>
+
+
+
+    <string name="daidalos_hello">Hello World!</string>
+    <string name="daidalos_app_name">aFileDialog</string>
+    <color name="daidalos_gray">#888</color>
+    <string name="daidalos_select">Select</string>
+    <string name="daidalos_cancel">Cancel</string>
+    <string name="daidalos_ok">OK-WYBIERAM</string>
+    <string name="daidalos_new_file">New</string>
+    <string name="daidalos_create_file">Create file</string>
+    <string name="daidalos_create_folder">Create folder</string>
+    <string name="daidalos_accept">Accept</string>
+    <string name="daidalos_enter_file_name">Enter the name of the file that you want to create</string>
+    <string name="daidalos_enter_folder_name">Enter the name of the folder that you want to create</string>
+    <string name="daidalos_yes">Yes</string>
+    <string name="daidalos_no">No</string>
+    <string name="daidalos_confirm_select_file">Are you sure that you want to select the file \'$file_name\'?</string>
+    <string name="daidalos_confirm_create_file">The file \'$file_name\' do not exists, are you sure that you want to create it?</string>
+    <string name="daidalos_confirm_select_folder">Are you sure that you want to select the folder \'$file_name\'?</string>
+    <string name="daidalos_confirm_create_folder">The folder \'$file_name\' do not exists, are you sure that you want to create it?</string>
+
+    <color name="daidalos_backgroud">#000</color>
+    <color name="daidalos_active_file">#fff</color>
+    <color name="daidalos_inactive_file">#888</color>
+
+
+    <string name="ostrzegaj_demo"><b>Informacja.</b>\n
+        Używasz aplikacji w wersji Demo.
+        \n\n
+W wersji Demo, w katalogu zewnętrznym (zasoby tworzone przez Użytkownika) może znajdować się maksymalnie <b>5</b> obrazków.
+        \n\n
+Jeżeli wskazany przez Ciebie katalog będzie zawierał więcej niż 5 obrazków, nie zostanie on użyty przez aplikację.
+        \n\n
+Pełna wersja może obsłużyć katalogi z dowolną liczbą obrazków.
+        \n\n
+Pełna wersja jest dostępna na stronie <b>AutyzmSoft.pl</b>
+    </string>
+
+
+    <string name="apka_info">Informacje o aplikacji\n\n
+    Program stworzony przez Autora jako pomoc naukowa dla jego dziecka.
+
+Udostępniając program Autor wyraża nadzieję, iż będzie on również przydatny w nauczaniu innych dzieci,
+jednak nie jest w stanie udzielić co do tego absolutnie żadnej gwarancji.
+\n
+Używając programu godzisz się na powyższy warunek.
+\n\n
+Baza danych programu dołączona do wersji dystrybucyjnej umieszczonej na stronie AutyzmSoft.pl
+zawiera 152 pary obrazek-dźwięk. Wszystkie 152 elementy graficzne i dźwiękowe zostały utworzone
+przez Autora we własnym zakresie lub pochodzi z serwisu Pixabay.com, skąd zostały pobrane bez naruszania praw autorskich.
+
+Użytkownik rozbudowując bazę danych powinien przestrzegać praw autorskich do zdjęć i nagrań
+dźwiękowych umieszczanych przez siebie w bazie programu.
+Powyższe dotyczy również rozpowszechniania bazy danych programu utworzonej bądź pozyskanej
+przez Użytkownika.
+\n
+Autor nie ponosi odpowiedzialności za naruszenie przez Użytkownika praw osób trzecich.
+\n
+</string>
+
+    <string name="instrukcja">
+        \n
+        Na zewnętrznej karcie SD tworzymy katog. W tym katalogu umieszczamy samodzielnie przygotowane zdjęcia i nagrania dźwiekowe.\n
+        Zdjęciami mogą być pliki JPG, PNG, BMP. Nagraniami dźwiękowymi mogą być pliki MP3, OGG, WAV, M4A, AMR. Nagrania dźwiękowe nie są obowiązkowe. Uwaga - aplikacja nie obsługuje plików dźwiękowych typu WMA.
+        \n
+        \nZdjęcie i nagranie dźwiękowe powinny mieć tę samą nazwę i różnić się jedynie rozszerzeniem.
+        \n
+        \nPrzykład:
+        \nTworzymy katalog i nadajemy mu nazwę np. <i><b>Rodzina</b></i>
+        \nRobimy zdjęcie mamusi. Zdjęciu nadajemy nazwę <i><b>mama.jpg</b></i>
+        \nZdjęcie umieszczamy w stworzonym przez nas katalogu <i><b>Rodzina</b></i>.
+        \nNagrywamy, np. za pomoca dyktafonu w telefonie, słowo \"mama\".
+        \nOtrzymany w ten sposób plik będzie typu M4A (najprawdopodobniej, zależne od rodzaju urządzenia).
+        \nPlikowi z dźwiękiem \"mama\" nadajemy nazwę <i><b>mama.m4a</b></i>
+        \nJeżeli urządzenie utworzy plik dźwiękowy innego typu - np. MP3, to plikowi nadajemy nazwę <i><b>mama.mp3</b></i>
+        \nPlik <i><b>mama.m4a</b></i> umieszczamy w tym samym katalogu, w którym umieściliśmy zdjęcie.
+        \nW aplikacji MPrzegladarka wybieramy opcję:
+        \n<i><b>obrazki z mojego katalogu</b></i> i wskazujemy katalog, w którym umieściliśmy zdjęcie i nagranie - w naszym przypadku będzie to katalog <i><b>Rodzina</b></i>
+        \nAplikacja wyświetli zdjęcie, odegra dźwięk, a pod zdjęciem wyświetli nazwę obrazka (czyli wyraz <i>mama</i>).
+        \n
+        \nJeżeli chcemy demonstrować dziecku więcej niż jedno zdjęcie tej samej osoby lub rzeczy (tzw. generalizacja), nazwa każdego kolejnego zdjęcia tej samej osoby/rzeczy powinna kończyć się cyfrą.
+        \nPrzykład: <i><b>mama.jpg , mama1.jpg , mama2.jpg , …</b></i>
+        \nNie trzeba tworzyć dodatkowych plików z dźwiękiem - wszystkie \"mamy\" zostaną obsłużone przez ten sam plik dźwiękowy <i><b>mama.m4a</b></i>
+        \n
+        \nAplikacja w pełnej wersji pozwala umieścić we włanym katalogu dowolną liczbę zdjęć i nagrań.
+        \nW wersji darmowej liczba zdjęć i nagrań jest ograniczona do 5.
+        \nW obydwu wersjach można tworzyć i wykorzystywać dowolną liczbę katalogów.
+        \nKatalogi mogą odpowiadać różnym kategoriom przedmiotów i zjawisk z otoczenia dziecka - zwierzęta (z podziałem na podkatalogi: domowe, wiejskie, leśne,
+        zoo), zabawki, pojazdy, owoce, warzywa,  meble, ubrania, instrumenty muzyczne, jedzenie, napoje,
+        przybory szkolne, przedmioty w kuchni, przedmioty w łazience, przedmioty w pokoju, itd.
+        \n
+        \nCzynność tworzenia katalogu na urządzeniu i czynność umieszczania w nim obrazków i nagrań najwygodniej jest przeprowadzić na komputerze stacjonarnym, do którego podłączamy telefon za pomocą kabla usb, ale wykonanie tego za pomocą odpowiedniej aplikacji na telefonie (tzw. menedżer plików) jest również możliwe.
+        \n
+    </string>
+
+    <string name="obsluga_opis">
+        \n<b>Długie dotknięcie na obrazku</b>  - Ekran z ustawieniami
+        \n<b>Krótkie dotknięcie na obrazku</b> - ponowne odegranie dźwięku
+        \n<b>Krótkie dotknięcie na napisie pod obrazkiem</b> - zmiana wielkie/małe litery
+        \n<b>Strzałka w prawo</b> - następny obrazek
+        \n<b>Strzałka w lewo</b> - poprzedni obrazek; w losowym trybie pokazywania obrazków możliwy jest powrót tylko o 1 obrazek wstecz
+        \n
+        \n<b>Ekran z ustawieniami:</b>
+        \nMożemy wyłączyć/włączyć głos, napisy, ustalić czy obrazki mają być wyświetlane alfabetycznie/losowo, możemy wybrać źródło z którego mają być pobierane obrazki - własny katalog/zasoby aplikacji.
+        \n
+        \nAplikacja dostosowuje się do 2-ch położeń ekranu - pionowego i poziomego; w ustawieniach telefonu należy włączyć opcję <i>obrót ekranu</i>.
+        \nPołożenie poziome zapewnia większą wygodę trzymania telefonu (istotne w przypadku młodszych dzieci)
+        \n
+        \n
+        \n
+    </string>
+
+</resources>

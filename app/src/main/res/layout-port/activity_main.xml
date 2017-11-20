@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.developer.mprzegladarka.MainActivity"
+    android:weightSum="4">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_height="wrap_content"
+        android:layout_width ="match_parent"
+        android:layout_centerHorizontal="true"
+        android:onClick="coNaKlikOnimageView"
+    />
+
+    <!--
+    <TextView
+        android:id="@+id/nazwaTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/podpis_pod_obrazkiem_rozmiar"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"/>
+    -->
+
+    <!-- Uwaga - rezegnuję z normalnego TextView na rzecz "wlasnej" klasy (ponizej), bo zwykly TextView zawijal dlugie wyrazy. 2017-03-22 -->
+    <!-- Uwaga: przy takim typie b. ważne jest szerokosc pola na "match_parent" - wtedy procedury onResize itp maja rozmiar 'odniesienia'; NIE wrpa_content!!! -->
+
+    <com.example.developer.mprzegladarka.ResizeTextView
+        android:id="@+id/nazwaTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal|center_vertical"
+
+        android:textSize="@dimen/podpis_pod_obrazkiem_rozmiar"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="0dp"
+        android:maxLines="1"
+    />
+
+<!--    android:onClick="nazwaTvClick"-->
+
+
+
+
+
+    <Button
+        android:id="@+id/btnNazad"
+
+        android:drawableRight="@drawable/arrow_left"
+
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+
+        android:layout_marginRight="0dp"
+
+        android:textSize="@dimen/btn_text_rozmiar"
+        android:layout_below="@id/nazwaTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="1dp"
+
+        android:background="@drawable/moj_klawisz"
+
+        />
+
+    <Button
+        android:id="@+id/btnForward"
+
+        android:drawableLeft="@drawable/arrow_right"
+
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+
+        android:layout_marginLeft="0dp"
+
+        android:layout_toEndOf="@id/btnNazad"
+
+        android:textSize="@dimen/btn_text_rozmiar"
+        android:layout_below="@id/nazwaTV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+
+        android:background="@drawable/moj_klawisz"
+
+
+     />
+
+
+
+</RelativeLayout>

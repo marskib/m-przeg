@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/SplashEkran"
+    android:layout_width="640dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:tag="noname"
+    android:gravity="left">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Mówiąca Przeglądarka"
+        android:textSize="@dimen/aplikacja_info_size"
+        android:gravity="center_horizontal"
+        />
+
+    <!--uwaga _np ponizej oznacza normal portrait - trzeba bylo kominowac, bo sie nie miescil, aklasa ResizeTextViev nie dzilala tutaj...-->
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/aplikacja_info_np"
+        android:textSize="@dimen/aplikacja_info_size_np"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.19"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/autyzmsoft"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/autyzmsoftpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="AutyzmSoft.pl"
+        android:autoLink="web"
+        android:textStyle="bold"
+        android:textSize="@dimen/nazwa_text_rozmiar">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="80dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <CheckBox android:id="@+id/cb_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/nazwa_text_rozmiar"
+            android:text=" z Głosem    "
+            android:checked="true"
+            android:layout_gravity="center_horizontal">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/cb_napisy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="@dimen/nazwa_text_rozmiar"
+            android:text=" z Napisami "
+            android:layout_gravity="center_horizontal"
+            />
+        <!-- spacje w ogonie stringa 'z napisami  ' sa po to, zeby wycentrowac rowno z napisem ponize ('bez napisow'): -->
+
+        <CheckBox
+            android:id="@+id/cb_alfabet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:text=" alfabetycznie"
+            android:textSize="@dimen/nazwa_text_rozmiar" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/rg_zrodlo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/rb_zAssets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textSize="@dimen/nazwa_text_rozmiar_uwaga_na_huawei"
+                    android:text="obrazki z zasobów aplikacji"
+                    android:layout_marginBottom="0dp"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_zKatalogu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textSize="@dimen/nazwa_text_rozmiar_uwaga_na_huawei"
+                    android:text="obrazki z mojego katalogu"
+                    />
+            </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sciezkaKatalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:id="@+id/tekst_opisowy_layout"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/nazwa_text_rozmiar_uwaga_na_huawei"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:text=" Ustawienia:">
+        </TextView>
+
+        <TextView
+            android:id="@+id/ustawienia_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/nazwa_text_rozmiar_uwaga_na_huawei"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:text=" długie dotknięcie na obrazku">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bINFO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="INFO"
+                android:onClick="bInfoStartClick"
+            />
+
+            <Button
+                android:id="@+id/bStart1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="START"
+                android:layout_weight="3"
+                android:drawableLeft="@drawable/tick"
+                android:onClick="bInfoStartClick"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

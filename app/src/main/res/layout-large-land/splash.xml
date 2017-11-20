@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/SplashEkran"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="noname">
+
+    <com.example.developer.mprzegladarka.ResizeTextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/aplikacja_info"
+        android:textSize="@dimen/aplikacja_info_size"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/autyzmsoft"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/autyzmsoftpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="AutyzmSoft.pl"
+        android:autoLink="web"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/nazwa_text_rozmiar">
+    </TextView>
+
+    <CheckBox android:id="@+id/cb_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/nazwa_text_rozmiar"
+        android:text=" Włącz głos    "
+        android:checked="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+    </CheckBox>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_napisy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="@dimen/nazwa_text_rozmiar"
+            android:layout_gravity="center_horizontal"
+            android:text=" z Napisami    "
+            />
+
+        <CheckBox
+            android:id="@+id/cb_alfabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="@dimen/nazwa_text_rozmiar"
+            android:text=" alfabetycznie"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_zrodlo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/rb_zAssets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="30sp"
+            android:text="obrazki z zasobów aplikacji   "
+            />
+        <RadioButton
+            android:id="@+id/rb_zKatalogu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textSize="30sp"
+            android:text="obrazki z mojego katalogu"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sciezkaKatalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/ustawienia_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="  Ustawienia: długie dotknięcie na obrazku">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bINFO"
+            android:textSize="@dimen/bOK_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="INFO"
+            android:onClick="bInfoStartClick"
+            />
+
+        <Button
+            android:id="@+id/bStart1"
+            android:textSize="@dimen/bOK_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/tick"
+            android:onClick="bInfoStartClick"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

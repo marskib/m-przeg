@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">3dp</dimen>
+    <dimen name="activity_vertical_margin">3dp</dimen>
+    <dimen name="btn_text_rozmiar">35sp</dimen>
+    <dimen name="nazwa_text_rozmiar">40sp</dimen>
+    <dimen name="margines_obrazka_od_gory">10dp</dimen>
+    <dimen name="podpis_pod_obrazkiem_rozmiar">90sp</dimen>
+    <dimen name="btn_zrodlo_text_rozmiar">25sp</dimen>
+
+    <dimen name="bOK_size">38sp</dimen>
+
+    <dimen name="aplikacja_info_size">40sp</dimen>
+
+    <dimen name="ostrzegaj_demo_size">30sp</dimen>
+
+    <dimen name="tvGledzenie_size">25sp</dimen>
+    <dimen name="tvInstrukcja_size">35sp</dimen>
+
+    <dimen name="aplikacja_info_size_lp">25sp</dimen>
+
+
+</resources>

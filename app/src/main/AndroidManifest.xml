@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.developer.mprzegladarka">
+
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_as"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+         android:name=".MainActivity"
+         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"> <!-- to powoduje, ze nie bedzie ActionBar'a (i nie zostanie stracone miejsce na gorze ekranu) -->
+         <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SplashKlasa"
+
+            android:theme="@style/SkibTheme">
+
+            <!--android:theme="@android:style/Theme.Holo.Dialog.NoActionBar">--> <!-- male okienko na srodku, nie przykrywa macierzystego activity -->
+
+            <!--android:label="MPrzegladarka - mowa bierna/czytanie globalne"-->
+            <!--  to robi przezroczystosc: android:theme="@android:style/Theme.Translucent" > -->
+
+            <intent-filter>
+                <action android:name="com.example.developer.mprzegladarka.SplashKlasa" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".FileChooserActivity"
+            android:label="Wybór katalogu z zasobami">
+        </activity>
+
+        <activity
+            android:name=".InternalExternalKlasa"
+            android:label="wybierz katalog"
+            android:theme="@android:style/Theme.Dialog">      <!-- male okienko na srodku, nie przykrywa macierzystego activity -->
+        </activity>
+
+        <activity
+            android:name=".WersjaDemoOstrzez"
+            android:label="Ostrzeżenie - używasz wersji demo">
+        </activity>
+
+        <activity
+            android:name=".ApkaInfo"
+            android:label="Informacje o aplikacji">
+        </activity>
+
+
+
+
+    </application>
+
+</manifest>

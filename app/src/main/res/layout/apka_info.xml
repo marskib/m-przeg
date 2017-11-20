@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvWersja"
+        android:text="cos tam"
+        android:textSize="@dimen/tvGledzenie_size"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:paddingLeft="5dp"
+        />
+
+    <ScrollView
+        android:layout_marginTop="30dp"
+        android:id="@+id/SCROLLER_ID_INFO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGledzenie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apka_info"
+                android:textSize="@dimen/tvGledzenie_size"/>
+
+
+            <com.example.developer.mprzegladarka.ResizeTextView
+                android:text="Instrukcja tworzenia własnych zdjęć i nagrań"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/tvInstrukcja_size"/>
+
+            <TextView
+                android:id="@+id/tvInstrukcja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instrukcja"
+                android:textSize="@dimen/tvInstrukcja_size"/>
+
+            <com.example.developer.mprzegladarka.ResizeTextView
+                android:text="Obsługa aplikacji"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/tvInstrukcja_size"/>
+
+            <TextView
+                android:id="@+id/tvObsluga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/obsluga_opis"
+                android:textSize="@dimen/tvInstrukcja_size"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/bStart"
+        android:text="START"
+        android:textSize="@dimen/bOK_size"
+        android:drawableLeft="@drawable/tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bOkInfo"
+        android:layout_toRightOf="@+id/view"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.85"
+
+        />
+<!--ponizej wypełniacz/rozdzielacz, zwróc uwage na kolejnosc deklaracji - ten pierwszy button jako 2-gi!   -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bDebug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bOkInfo"
+        android:text="sprawdz_SD"
+        android:textAllCaps="false"
+        android:onClick="sprawdzSD"
+        android:visibility="gone"
+        />
+
+
+    <Button
+        android:id="@+id/bOkInfo"
+        android:text="OK"
+        android:textSize="@dimen/bOK_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/view"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.85"/>
+
+
+</RelativeLayout>

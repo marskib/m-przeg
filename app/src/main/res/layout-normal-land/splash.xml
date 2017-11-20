@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/SplashEkran"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="noname">
+
+    <com.example.developer.mprzegladarka.ResizeTextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/aplikacja_info"
+        android:textSize="@dimen/aplikacja_info_size"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:layout_marginBottom="3dp"
+        />
+
+
+    <TextView
+        android:id="@+id/autyzmsoftpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AutyzmSoft.pl"
+        android:autoLink="web"
+
+        android:textSize="@dimen/nazwa_text_rozmiar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+    />
+
+
+    <CheckBox android:id="@+id/cb_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/nazwa_text_rozmiar"
+        android:text=" z Głosem       "
+        android:checked="true"
+        android:layout_gravity="center_horizontal">
+    </CheckBox>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+        android:id="@+id/cb_napisy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textSize="@dimen/nazwa_text_rozmiar"
+        android:text=" z Napisami      "
+        />
+
+        <CheckBox
+            android:id="@+id/cb_alfabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text=" alfabetycznie"
+            android:textSize="@dimen/nazwa_text_rozmiar"
+        />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_zrodlo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_zAssets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="@dimen/rb_dolny_text_rozmiar"
+            android:text="obrazki z zasobów aplikacji "
+            />
+        <RadioButton
+            android:id="@+id/rb_zKatalogu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textSize="@dimen/rb_dolny_text_rozmiar"
+            android:text="obrazki z mojego katalogu"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sciezkaKatalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="0dp"
+    />
+
+    <TextView
+        android:id="@+id/ustawienia_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/nazwa_text_rozmiar_uwaga_na_huawei_land"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:text="  Ustawienia: długie dotknięcie na obrazku"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bINFO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="INFO"
+            android:onClick="bInfoStartClick"
+            />
+
+        <Button
+            android:id="@+id/bStart1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/tick"
+            android:onClick="bInfoStartClick"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
